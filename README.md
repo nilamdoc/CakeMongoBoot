@@ -32,13 +32,13 @@ Example for Windows + XAMPP installation
 
 Add the following line
 
-'127.0.0.1 CakeMongoBoot'
+`127.0.0.1 CakeMongoBoot`
 
 - Edit c:\xampp\apache\conf\extra\httpd-vhosts.conf
 
 Add the following code
 
-'<VirtualHost CakeMongoBoot:80>
+`<VirtualHost CakeMongoBoot:80>
 
 DocumentRoot F:\Apache\www\TBG\CakeMongoBoot
 
@@ -58,6 +58,6 @@ Allow from all
 
 </Directory>
 
-</VirtualHost>'
+</VirtualHost>` 
 
 
