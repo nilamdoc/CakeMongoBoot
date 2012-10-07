@@ -16,11 +16,11 @@ MongoDB Installtion
 ====
 Download MongoDB from http://www.mongodb.org/downloads
 
-Download PHP Driver for MongoDB from http://us.php.net/manual/en/mongo.installation.php
+Download PHP Driver for MongoDB from [PHPDriversMongoDB](http://us.php.net/manual/en/mongo.installation.php)
 
 Installing MongoDB as a service in Windows
 ====
-http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/#mongodb-as-a-windows-service
+[MongoDB as a Service](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/#mongodb-as-a-windows-service)
 
 Installing CakeMongoBoot on your webserver
 ====
@@ -32,13 +32,13 @@ Example for Windows + XAMPP installation
 
 Add the following line
 
-127.0.0.1 CakeMongoBoot
+'127.0.0.1 CakeMongoBoot'
 
 - Edit c:\xampp\apache\conf\extra\httpd-vhosts.conf
 
 Add the following code
 
-<VirtualHost CakeMongoBoot:80>
+'<VirtualHost CakeMongoBoot:80>
 
 DocumentRoot F:\Apache\www\TBG\CakeMongoBoot
 
@@ -58,6 +58,6 @@ Allow from all
 
 </Directory>
 
-</VirtualHost>
+</VirtualHost>'
 
 
