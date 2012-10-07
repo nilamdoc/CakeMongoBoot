@@ -32,32 +32,32 @@ Example for Windows + XAMPP installation
 
 Add the following line
 
-`127.0.0.1 CakeMongoBoot`
+    127.0.0.1 CakeMongoBoot
 
 - Edit c:\xampp\apache\conf\extra\httpd-vhosts.conf
 
 Add the following code
 
-`<VirtualHost CakeMongoBoot:80>
+    <VirtualHost CakeMongoBoot:80>
 
-DocumentRoot F:\Apache\www\TBG\CakeMongoBoot
+    DocumentRoot F:\Apache\www\TBG\CakeMongoBoot
 
-ServerName CakeMongoBoot
+    ServerName CakeMongoBoot
 
-ServerAdmin admin@CakeMongoBoot
+    ServerAdmin admin@CakeMongoBoot
 
-<Directory "F:\Apache\www\TBG\CakeMongoBoot">
+    <Directory "F:\Apache\www\TBG\CakeMongoBoot">
 
-Options Indexes FollowSymLinks
+    Options Indexes FollowSymLinks
 
-AllowOverride FileInfo
+    AllowOverride FileInfo
 
-Order allow,deny
+    Order allow,deny
 
-Allow from all
+    Allow from all
 
-</Directory>
+    </Directory>
 
-</VirtualHost>` 
+    </VirtualHost>` 
 
 
