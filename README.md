@@ -9,3 +9,9 @@ It contains
 - MongoDB setup installed
 - Twitter Bootstrap installed
 - Auth Application installed
+
+MongoDB Installtion
+====
+Download MongoDB from http://www.mongodb.org/downloads
+
+Download PHP Driver for MongoDB from http://us.php.net/manual/en/mongo.installation.php
