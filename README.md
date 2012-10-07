@@ -31,20 +31,33 @@ Example for Windows + XAMPP installation
 - Edit c:\Windows\System32\Drivers\etc\hosts
 
 Add the following line
+
 127.0.0.1 CakeMongoBoot
 
 - Edit c:\xampp\apache\conf\extra\httpd-vhosts.conf
+
 Add the following code
+
 <VirtualHost CakeMongoBoot:80>
+
 DocumentRoot F:\Apache\www\TBG\CakeMongoBoot
+
 ServerName CakeMongoBoot
+
 ServerAdmin admin@CakeMongoBoot
+
 <Directory "F:\Apache\www\TBG\CakeMongoBoot">
+
 Options Indexes FollowSymLinks
+
 AllowOverride FileInfo
+
 Order allow,deny
+
 Allow from all
+
 </Directory>
+
 </VirtualHost>
 
 
