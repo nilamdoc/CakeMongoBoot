@@ -24,10 +24,10 @@ Installing MongoDB as a service in Windows
 
 Installing CakeMongoBoot on your webserver
 ====
-Download and unzip this application on your web server.
+Download this application from github and unzip this application on your web server.
 
 Example for Windows + XAMPP installation
-====
+-
 - Edit c:\Windows\System32\Drivers\etc\hosts
 
 Add the following line
@@ -39,25 +39,34 @@ Add the following line
 Add the following code
 
     <VirtualHost CakeMongoBoot:80>
+      DocumentRoot F:\Apache\www\TBG\CakeMongoBoot
+      ServerName CakeMongoBoot
+      ServerAdmin admin@CakeMongoBoot
+        <Directory "F:\Apache\www\TBG\CakeMongoBoot">
+           Options Indexes FollowSymLinks
+           AllowOverride FileInfo
+           Order allow,deny
+           Allow from all
+        </Directory>
+    </VirtualHost>
 
-    DocumentRoot F:\Apache\www\TBG\CakeMongoBoot
+Restart XAMPP Apache or restart computer
 
-    ServerName CakeMongoBoot
+Adding / Modifying Database to CakeMongoBoot
+-
+In your browser go to
+http://CakeMongoBoot/rockmongo
 
-    ServerAdmin admin@CakeMongoBoot
+    username: admin
+    password: admin
 
-    <Directory "F:\Apache\www\TBG\CakeMongoBoot">
+Under CakeMongoBoot you will see 3 collections
+    roles
+    users
+    system.indexes
 
-    Options Indexes FollowSymLinks
-
-    AllowOverride FileInfo
-
-    Order allow,deny
-
-    Allow from all
-
-    </Directory>
-
-    </VirtualHost>` 
-
+How to add a new data collection and bake with cake
+-
+Insert a new Collection (follow the CakePHP convention of plural names)
+e.g. rights, profiles, blogs, posts
 
