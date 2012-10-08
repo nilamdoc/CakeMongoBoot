@@ -1,69 +1,24 @@
 <div class="users view">
 <h2><?php  echo __('User'); ?></h2>
 	<dl>
-		<dt><?php echo __('Id'); ?></dt>
+		<dt><?php echo __(' Id'); ?></dt>
 		<dd>
 			<?php echo h($user['User']['_id']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Username'); ?></dt>
+		<dt><?php echo __('Created'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['username']); ?>
+			<?php echo h($user['User']['created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Email'); ?></dt>
+		<dt><?php echo __('Modified'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['email']); ?>
+			<?php echo h($user['User']['modified']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Password'); ?></dt>
+		<dt><?php echo __('Name'); ?></dt>
 		<dd>
-			<?php echo h($user['User']['password']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Date Join'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['date_join']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Last Login'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['last_login']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Approved'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['approved']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Firstname'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['firstname']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Lastname'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['lastname']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Approved Date'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['approved_date']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Approved Code'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['approved_code']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Mobile'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['mobile']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Visits'); ?></dt>
-		<dd>
-			<?php echo h($user['User']['visits']); ?>
+			<?php echo h($user['User']['name']); ?>
 			&nbsp;
 		</dd>
 	</dl>

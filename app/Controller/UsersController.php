@@ -96,20 +96,4 @@ class UsersController extends AppController {
 		$this->Session->setFlash(__('User was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
-
-    protected function _unserialize($_id, $idtype) {
-        if ($idtype == 'object' || $idtype == 'array') {
-            $errLevel = error_reporting();
-            error_reporting(0); //unserializing an object that is not serialized throws a warning
-            $_idObj = unserialize($_id);
-            error_reporting($errLevel);
-            if ($_idObj !== false) {
-                $_id = $_idObj;
-            }
-        } else if (gettype($_id) != $idtype) {
-            settype($_id, $idtype);
-        }
-        return $_id;
-    }
-
 }

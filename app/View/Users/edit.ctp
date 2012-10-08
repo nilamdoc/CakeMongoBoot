@@ -4,18 +4,7 @@
 		<legend><?php echo __('Edit User'); ?></legend>
 	<?php
 		echo $this->Form->input('_id');
-		echo $this->Form->input('username');
-		echo $this->Form->input('email');
-		echo $this->Form->input('password');
-		echo $this->Form->input('date_join');
-		echo $this->Form->input('last_login');
-		echo $this->Form->input('approved');
-		echo $this->Form->input('firstname');
-		echo $this->Form->input('lastname');
-		echo $this->Form->input('approved_date');
-		echo $this->Form->input('approved_code');
-		echo $this->Form->input('mobile');
-		echo $this->Form->input('visits');
+		echo $this->Form->input('name');
 	?>
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
